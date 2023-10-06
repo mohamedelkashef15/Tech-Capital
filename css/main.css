@@ -3,6 +3,7 @@
 :root {
   --blue: #00204a;
   --cyan: #00BBf0;
+  --purple: #0B0252;
   --light-blue: #00285a;
 }
 
@@ -16,10 +17,16 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
+  height: 4000px;
 }
 
 p {
   line-height: 1.6;
+}
+
+h2,
+h3 {
+  color: var(--blue);
 }
 
 /* Utility Classes */
@@ -35,9 +42,14 @@ p {
   padding: 12px 40px;
 }
 
+.text-primary {
+  color: var(--cyan);
+}
+
 /* Header Start */
 #home {
   background: url("../img/home-bg.png") no-repeat center center/cover;
+  background: var(--purple);
   height: 100vh;
 }
 
@@ -73,7 +85,7 @@ p {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-self: center;
-  height: 80vh;
+  height: calc(100vh - 100px);
   place-content: center;
   column-gap: 7rem;
 }
@@ -109,3 +121,74 @@ p {
 }
 
 /* Header End */
+
+/* Services Start */
+#services {
+  padding: 5rem 0;
+  text-align: center;
+}
+
+#services h2 {
+  font-size: 30px;
+  padding-bottom: 8px;
+}
+
+#services .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  margin: 4rem 0 2rem;
+}
+
+#services .row .col {
+  background-color: #f2f2f2;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+#services .row .col:hover {
+  transform: scale(1.04);
+}
+
+#services .row .col img {
+  width: 65px;
+}
+
+
+#services .row .col h3 {
+  margin: 20px 0;
+  font-size: 20px;
+  color: var(--blue);
+}
+
+#services .row .col p {
+  font-size: 14px;
+}
+
+/* Services End */
+
+/* About Start */
+#about {
+  padding: 5rem 0;
+  background-color: var(--blue);
+}
+
+#about h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+#about .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4rem;
+  margin-top: 5rem;
+}
+
+#about .row img {
+  width: 100%;
+}
+
+/* About End */
