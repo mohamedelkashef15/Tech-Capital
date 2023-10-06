@@ -15,6 +15,10 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   height: 4000px;
@@ -22,11 +26,6 @@ body {
 
 p {
   line-height: 1.6;
-}
-
-h2,
-h3 {
-  color: var(--blue);
 }
 
 /* Utility Classes */
@@ -40,6 +39,11 @@ h3 {
   background-color: var(--cyan);
   color: #fff;
   padding: 12px 40px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0091b9;
 }
 
 .text-primary {
@@ -83,10 +87,8 @@ h3 {
 #home .home-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  align-self: center;
-  height: calc(100vh - 100px);
   place-content: center;
+  height: calc(100vh - 100px);
   column-gap: 7rem;
 }
 
@@ -103,48 +105,55 @@ h3 {
 
 #home .home-content img {
   width: 100%;
-  /* animation: upDown 5s infinite; */
+  animation: upDown 5s infinite ease-out;
 }
 
 @keyframes upDown {
   0% {
-    transform: translateY(-45px);
+    transform: translateY(-70px);
   }
 
   50% {
-    transform: translateY(45px);
+    transform: translateY(30px);
   }
 
   100% {
-    transform: translateY(-45px);
+    transform: translateY(-70px);
   }
 }
 
 /* Header End */
 
 /* Services Start */
-#services {
-  padding: 5rem 0;
+#services,
+#why-us,
+#testimonials {
+  padding: 6rem 0;
   text-align: center;
 }
 
-#services h2 {
-  font-size: 30px;
+#services h2,
+#why-us h2,
+#testimonials h2 {
+  font-size: 32px;
   padding-bottom: 8px;
+  color: var(--blue);
 }
 
-#services .row {
+#services .row,
+#why-us .row,
+#team .row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
-  margin: 4rem 0 2rem;
+  margin: 3rem 0;
 }
 
 #services .row .col {
   background-color: #f2f2f2;
   padding: 2rem;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -152,43 +161,148 @@ h3 {
   transform: scale(1.04);
 }
 
-#services .row .col img {
+#services .row .col img,
+#why-us .row .col img {
   width: 65px;
 }
 
 
-#services .row .col h3 {
+#services .row .col h3,
+#why-us .row .col h3 {
   margin: 20px 0;
   font-size: 20px;
   color: var(--blue);
 }
 
-#services .row .col p {
+#services .row .col p,
+#why-us .row .col p {
   font-size: 14px;
 }
 
 /* Services End */
 
 /* About Start */
-#about {
-  padding: 5rem 0;
+#about,
+#team {
+  padding: 6rem 0;
   background-color: var(--blue);
 }
 
-#about h2 {
-  font-size: 30px;
+#about h2,
+#team h2 {
+  font-size: 32px;
   text-align: center;
+  color: #fff;
 }
 
 #about .row {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 4rem;
-  margin-top: 5rem;
+  align-items: center;
+  column-gap: 2rem;
+  margin-top: 3rem;
 }
 
 #about .row img {
   width: 100%;
 }
 
+#about h3 {
+  color: #fff;
+  font-size: 24px;
+}
+
+#about .row p {
+  color: #fff;
+  margin: 20px 0;
+}
+
+#about .row a {
+  margin-top: 10px;
+}
+
 /* About End */
+
+/* Services Start */
+
+/* Services End */
+
+/* Team Start */
+#team {
+  text-align: center;
+}
+
+#team .row .col {
+  background-color: var(--light-blue);
+  padding: 3rem;
+}
+
+#team .row .col img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+#team .row .col h3 {
+  color: var(--cyan);
+  margin: 15px 0 10px;
+  font-size: 20px;
+}
+
+#team .row .col p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+#team .row .col .social a {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+}
+
+#team .row .col .social a:hover {
+  color: var(--cyan);
+}
+
+/* Team End */
+
+/* Testimonials start*/
+
+#testimonials .row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  column-gap: 2rem;
+  margin-top: 6rem;
+}
+
+#testimonials .row .col {
+  background-color: #f2f2f2;
+  padding: 3rem 2rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+#testimonials .row .col img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  position: absolute;
+  left: 20px;
+  top: -50px;
+}
+
+#testimonials .row .col h3 {
+  font-size: 20px;
+}
+
+#testimonials .row .col p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+/* Testimonials End*/
