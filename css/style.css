@@ -77,6 +77,10 @@ a {
   font-weight: 700;
 }
 
+#home .navbar ul {
+  display: flex;
+}
+
 #home .navbar ul li a {
   color: #fff;
   margin: 0 15px;
@@ -97,15 +101,15 @@ a {
   column-gap: 7rem;
 }
 
-#home .home-content h1 {
+#home .home-content .col h1 {
   color: #fff;
   font-size: 50px;
 }
 
-#home .home-content p {
+#home .home-content .col p {
   color: #fff;
   margin: 1rem 0 3rem;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 #home .home-content img {
