@@ -11,9 +11,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
 }
+
 
 html {
   scroll-behavior: smooth;
@@ -26,6 +25,14 @@ body {
 
 p {
   line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* Utility Classes */
@@ -53,9 +60,8 @@ p {
 
 /* Header Start */
 #home {
-  background: url("../img/home-bg.png") no-repeat center center/cover;
-  background: var(--purple);
-  height: 100vh;
+  background: url("../img/home-bg.png") no-repeat center center/cover var(--purple);
+  min-height: 100vh;
 }
 
 #home .navbar {
