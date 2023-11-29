@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;&display=swap');
 
 :root {
   --blue: #00204a;
@@ -68,7 +68,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 120px;
 }
 
 #home .navbar .logo {
@@ -92,8 +92,8 @@ a {
 #home .home-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  place-content: center;
-  min-height: calc(100vh - 100px);
+  align-items: center;
+  min-height: calc(100vh - 120px);
   column-gap: 7rem;
 }
 
@@ -104,12 +104,12 @@ a {
 
 #home .home-content p {
   color: #fff;
-  margin: 0 0 3rem;
+  margin: 1rem 0 3rem;
   font-size: 14px;
 }
 
 #home .home-content img {
-  width: 100%;
+  max-width: 100%;
   animation: upDown 5s infinite ease-out;
 }
 
