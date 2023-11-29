@@ -5,6 +5,7 @@
   --cyan: #00BBf0;
   --purple: #0B0252;
   --light-blue: #00285a;
+  --bg-white: #f2f2f2;
 }
 
 * {
@@ -61,7 +62,6 @@ a {
 /* Header Start */
 #home {
   background: url("../img/home-bg.png") no-repeat center center/cover var(--purple);
-  min-height: 100vh;
 }
 
 #home .navbar {
@@ -93,7 +93,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-content: center;
-  height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px);
   column-gap: 7rem;
 }
 
@@ -112,6 +112,7 @@ a {
   width: 100%;
   animation: upDown 5s infinite ease-out;
 }
+
 
 @keyframes upDown {
   0% {
@@ -155,7 +156,7 @@ a {
 }
 
 #services .row .col {
-  background-color: #f2f2f2;
+  background-color: var(--bg-white);
   padding: 2rem;
   border-radius: 5px;
   box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
@@ -213,7 +214,7 @@ a {
   width: 100%;
 }
 
-#about h3 {
+#about .row h3 {
   color: #fff;
   font-size: 24px;
 }
@@ -229,18 +230,11 @@ a {
 
 /* About End */
 
-/* Services Start */
-
-/* Services End */
-
 /* Team Start */
-#team {
-  text-align: center;
-}
-
 #team .row .col {
   background-color: var(--light-blue);
   padding: 3rem;
+  text-align: center;
 }
 
 #team .row .col img {
@@ -295,7 +289,7 @@ a {
 }
 
 #testimonials .row .col {
-  background-color: #f2f2f2;
+  background-color: var(--bg-white);
   padding: 3rem 2rem;
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
