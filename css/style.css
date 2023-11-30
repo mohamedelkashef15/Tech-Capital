@@ -264,12 +264,12 @@ a {
 }
 
 #team .row .col .social,
-#footer .row .col:first-child .social {
+#footer .row .col-1 .social {
   margin-top: 30px;
 }
 
 #team .row .col .social a,
-#footer .row .col:first-child .social a {
+#footer .row .col-1 .social a {
   color: #fff;
   font-size: 20px;
   margin-right: 15px;
@@ -277,7 +277,7 @@ a {
 }
 
 #team .row .col .social a:hover,
-#footer .row .col:first-child .social a:hover {
+#footer .row .col-1 .social a:hover {
   color: var(--cyan);
 }
 
@@ -339,27 +339,27 @@ a {
   column-gap: 2rem;
 }
 
-#footer .row .col h2 {
+#footer .row h2 {
   margin-bottom: 1rem;
   font-weight: 600;
 }
 
-#footer .row .col:first-child p {
+#footer .row .col-1 ul li {
   margin: 10px 0;
 }
 
-#footer .row .col:first-child p i {
+#footer .row .col-1 ul li i {
   margin-right: 5px;
 }
 
-#footer .row .col:nth-child(3) ul li a {
+#footer .row .col-3 ul li a {
   display: block;
   color: #fff;
   margin-bottom: 15px;
   transition: all 0.2s ease;
 }
 
-#footer .row .col:last-child input {
+#footer .row .col-4 input {
   width: 100%;
   border: none;
   background-color: transparent;
@@ -367,15 +367,15 @@ a {
   padding: 10px 0;
 }
 
-#footer .row .col:last-child input::placeholder {
+#footer .row .col-4 input::placeholder {
   color: #fff;
 }
 
-#footer .row .col:last-child input:focus {
+#footer .row .col-4 input:focus {
   outline: none;
 }
 
-#footer .row .col:last-child .btn {
+#footer .row .col-4 .btn {
   width: 100%;
   margin-top: 10px;
   text-align: center;
@@ -383,7 +383,6 @@ a {
 
 .copyright {
   background-color: #fff;
-  /* width: 100%; */
   padding: 1rem 0;
   text-align: center;
   color: #333;
