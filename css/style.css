@@ -196,13 +196,13 @@ a {
 #team {
   padding: 6rem 0;
   background-color: var(--blue);
+  color: #fff;
 }
 
 #about h2,
 #team h2 {
   font-size: 32px;
   text-align: center;
-  color: #fff;
 }
 
 #about .row {
@@ -219,12 +219,10 @@ a {
 }
 
 #about .row h3 {
-  color: #fff;
   font-size: 24px;
 }
 
 #about .row p {
-  color: #fff;
   margin: 20px 0;
 }
 
@@ -233,6 +231,13 @@ a {
 }
 
 /* About End */
+
+/* Why us start */
+#why-us .row {
+  margin-bottom: 0rem;
+}
+
+/* Why us end */
 
 /* Team Start */
 #team .row .col {
@@ -255,7 +260,6 @@ a {
 }
 
 #team .row .col p {
-  color: #fff;
   font-size: 14px;
 }
 
@@ -303,7 +307,6 @@ a {
 #testimonials .row .col img {
   width: 100px;
   border-radius: 50%;
-  margin-bottom: 15px;
   position: absolute;
   left: 20px;
   top: -50px;
